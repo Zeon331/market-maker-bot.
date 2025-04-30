@@ -1,0 +1,8 @@
+json-log-formatter==0.5.1
+python-json-logger==2.0.7
+torch==2.0.1
+snowflake-connector-python==3.4.0
+boto3==1.28.62
+pybreaker==2.0.0
+wasmer==1.1.0
+hvac==1.1.0
