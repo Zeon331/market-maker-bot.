@@ -1,0 +1,334 @@
+[2025-04-30 21:15:13,142] [2025-04-30 21:15:13] Critical error: 'QLineEdit' object is not callable
+[2025-04-30 21:24:26,331] [2025-04-30 21:24:26] Login process error: Login failed: SteamClient.login() missing 1 required positional argument: 'username'
+[2025-04-30 21:24:26,332] [2025-04-30 21:24:26] Bot startup error: name 'aiohttp' is not defined
+[2025-04-30 21:24:26,332] Exception in callback asyncSlot.<locals>._error_handler() at C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py:778
+handle: <Handle asyncSlot.<locals>._error_handler() at C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py:778>
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\auth.py", line 30, in login
+    result = self.client.login()
+TypeError: SteamClient.login() missing 1 required positional argument: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 140, in _handle_login_dialog
+    return await self.auth.login(credentials['username'], credentials['password'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\auth.py", line 43, in login
+    raise Exception(f"Login failed: {str(e)}")
+Exception: Login failed: SteamClient.login() missing 1 required positional argument: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 102, in start_bot
+    if not await self._authenticate_user():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 123, in _authenticate_user
+    if not await self._handle_login_dialog(login_dialog):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 142, in _handle_login_dialog
+    self._handle_error("Login process", e)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 226, in _handle_error
+    if isinstance(error, (aiohttp.ClientError, asyncio.TimeoutError)):
+                          ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 780, in _error_handler
+    task.result()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 118, in start_bot
+    self._handle_error("Bot startup", e)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 226, in _handle_error
+    if isinstance(error, (aiohttp.ClientError, asyncio.TimeoutError)):
+                          ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 782, in _error_handler
+    sys.excepthook(*sys.exc_info())
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 15, in handle_unhandled_exception
+    logger.error("UNHANDLED EXCEPTION", exc_info=(exc_type, exc_value, exc_traceback))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Logger.error() got an unexpected keyword argument 'exc_info'
+[2025-04-30 21:27:21,592] [2025-04-30 21:27:21] Login process error: Login failed: SteamClient.login() missing 1 required positional argument: 'username'
+[2025-04-30 21:27:21,593] [2025-04-30 21:27:21] Bot startup error: name 'aiohttp' is not defined
+[2025-04-30 21:27:21,593] Exception in callback asyncSlot.<locals>._error_handler() at C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py:778
+handle: <Handle asyncSlot.<locals>._error_handler() at C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py:778>
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\auth.py", line 30, in login
+    result = self.client.login()
+TypeError: SteamClient.login() missing 1 required positional argument: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 140, in _handle_login_dialog
+    return await self.auth.login(credentials['username'], credentials['password'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\auth.py", line 43, in login
+    raise Exception(f"Login failed: {str(e)}")
+Exception: Login failed: SteamClient.login() missing 1 required positional argument: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 102, in start_bot
+    if not await self._authenticate_user():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 123, in _authenticate_user
+    if not await self._handle_login_dialog(login_dialog):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 142, in _handle_login_dialog
+    self._handle_error("Login process", e)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 226, in _handle_error
+    if isinstance(error, (aiohttp.ClientError, asyncio.TimeoutError)):
+                          ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 780, in _error_handler
+    task.result()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 118, in start_bot
+    self._handle_error("Bot startup", e)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 226, in _handle_error
+    if isinstance(error, (aiohttp.ClientError, asyncio.TimeoutError)):
+                          ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 782, in _error_handler
+    sys.excepthook(*sys.exc_info())
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 15, in handle_unhandled_exception
+    logger.error("UNHANDLED EXCEPTION", exc_info=(exc_type, exc_value, exc_traceback))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Logger.error() got an unexpected keyword argument 'exc_info'
+[2025-04-30 21:27:35,234] [2025-04-30 21:27:35] Data export error: 'CSVExporter' object has no attribute 'generate_report'
+[2025-04-30 21:27:40,681] [2025-04-30 21:27:40] Login process error: Login failed: SteamClient.login() missing 1 required positional argument: 'username'
+[2025-04-30 21:27:40,681] [2025-04-30 21:27:40] Bot startup error: name 'aiohttp' is not defined
+[2025-04-30 21:27:40,682] Exception in callback asyncSlot.<locals>._error_handler() at C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py:778
+handle: <Handle asyncSlot.<locals>._error_handler() at C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py:778>
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\auth.py", line 30, in login
+    result = self.client.login()
+TypeError: SteamClient.login() missing 1 required positional argument: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 140, in _handle_login_dialog
+    return await self.auth.login(credentials['username'], credentials['password'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\auth.py", line 43, in login
+    raise Exception(f"Login failed: {str(e)}")
+Exception: Login failed: SteamClient.login() missing 1 required positional argument: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 102, in start_bot
+    if not await self._authenticate_user():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 123, in _authenticate_user
+    if not await self._handle_login_dialog(login_dialog):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 142, in _handle_login_dialog
+    self._handle_error("Login process", e)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 226, in _handle_error
+    if isinstance(error, (aiohttp.ClientError, asyncio.TimeoutError)):
+                          ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 780, in _error_handler
+    task.result()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 118, in start_bot
+    self._handle_error("Bot startup", e)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 226, in _handle_error
+    if isinstance(error, (aiohttp.ClientError, asyncio.TimeoutError)):
+                          ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 782, in _error_handler
+    sys.excepthook(*sys.exc_info())
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 15, in handle_unhandled_exception
+    logger.error("UNHANDLED EXCEPTION", exc_info=(exc_type, exc_value, exc_traceback))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Logger.error() got an unexpected keyword argument 'exc_info'
+[2025-04-30 21:29:57,570] [2025-04-30 21:29:57] Login process error: Login failed: 'SteamClient' object has no attribute 'LoginResult'
+[2025-04-30 21:29:57,571] [2025-04-30 21:29:57] Bot startup error: name 'aiohttp' is not defined
+[2025-04-30 21:29:57,572] Exception in callback asyncSlot.<locals>._error_handler() at C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py:778
+handle: <Handle asyncSlot.<locals>._error_handler() at C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py:778>
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\auth.py", line 33, in login
+    if result == self.client.LoginResult.SteamGuard:
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SteamClient' object has no attribute 'LoginResult'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 140, in _handle_login_dialog
+    return await self.auth.login(credentials['username'], credentials['password'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\auth.py", line 44, in login
+    raise Exception(f"Login failed: {str(e)}")
+Exception: Login failed: 'SteamClient' object has no attribute 'LoginResult'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 102, in start_bot
+    if not await self._authenticate_user():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 123, in _authenticate_user
+    if not await self._handle_login_dialog(login_dialog):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 142, in _handle_login_dialog
+    self._handle_error("Login process", e)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 226, in _handle_error
+    if isinstance(error, (aiohttp.ClientError, asyncio.TimeoutError)):
+                          ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 780, in _error_handler
+    task.result()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 118, in start_bot
+    self._handle_error("Bot startup", e)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 226, in _handle_error
+    if isinstance(error, (aiohttp.ClientError, asyncio.TimeoutError)):
+                          ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 782, in _error_handler
+    sys.excepthook(*sys.exc_info())
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 15, in handle_unhandled_exception
+    logger.error("UNHANDLED EXCEPTION", exc_info=(exc_type, exc_value, exc_traceback))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Logger.error() got an unexpected keyword argument 'exc_info'
+[2025-04-30 21:30:38,523] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001C5FFD02CF0>
+[2025-04-30 21:30:39,814] [2025-04-30 21:30:39] Login process error: Login failed: 'SteamClient' object has no attribute 'LoginResult'
+[2025-04-30 21:30:39,814] [2025-04-30 21:30:39] Bot startup error: name 'aiohttp' is not defined
+[2025-04-30 21:30:39,815] Exception in callback asyncSlot.<locals>._error_handler() at C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py:778
+handle: <Handle asyncSlot.<locals>._error_handler() at C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py:778>
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\auth.py", line 33, in login
+    if result == self.client.LoginResult.SteamGuard:
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SteamClient' object has no attribute 'LoginResult'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 140, in _handle_login_dialog
+    return await self.auth.login(credentials['username'], credentials['password'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\auth.py", line 44, in login
+    raise Exception(f"Login failed: {str(e)}")
+Exception: Login failed: 'SteamClient' object has no attribute 'LoginResult'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 102, in start_bot
+    if not await self._authenticate_user():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 123, in _authenticate_user
+    if not await self._handle_login_dialog(login_dialog):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 142, in _handle_login_dialog
+    self._handle_error("Login process", e)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 226, in _handle_error
+    if isinstance(error, (aiohttp.ClientError, asyncio.TimeoutError)):
+                          ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 780, in _error_handler
+    task.result()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 118, in start_bot
+    self._handle_error("Bot startup", e)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 226, in _handle_error
+    if isinstance(error, (aiohttp.ClientError, asyncio.TimeoutError)):
+                          ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ваня\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 782, in _error_handler
+    sys.excepthook(*sys.exc_info())
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 15, in handle_unhandled_exception
+    logger.error("UNHANDLED EXCEPTION", exc_info=(exc_type, exc_value, exc_traceback))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Logger.error() got an unexpected keyword argument 'exc_info'
+[2025-04-30 21:37:43,460] [2025-04-30 21:37:43] Authentication error: Login error: SteamClient.login() missing 1 required positional argument: 'username'
+[2025-04-30 21:38:02,625] [2025-04-30 21:38:02] Authentication error: Login error: SteamClient.login() missing 1 required positional argument: 'username'
+[2025-04-30 21:39:08,282] Unhandled exception
+Traceback (most recent call last):
+  File "C:\Users\Ваня\Desktop\cs2\main.py", line 254, in closeEvent
+    self.stop_bot()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Ваня\Desktop\cs2\venv\Lib\site-packages\qasync\__init__.py", line 802, in wrapper
+    task = asyncio.ensure_future(fn(*args, **kwargs))
+  File "C:\Users\Ваня\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 742, in ensure_future
+    raise TypeError('An asyncio.Future, a coroutine or an awaitable '
+                    'is required')
+TypeError: An asyncio.Future, a coroutine or an awaitable is required
